@@ -18,7 +18,7 @@ and()content type="application/json"dir.
 @Test
     public void get01() {
     given().
-            accept("application/json").
+            accept("application/json").//Amac data type ini deklare etmektir.
             when().
             get("https://restful-booker.herokuapp.com/booking").
             then().

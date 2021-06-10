@@ -11,7 +11,6 @@ public class GetRequest01 {
     //Rest-Assured kullanarak API Testing yapariz
 
     @org.junit.Test
-
     public void getMethod01(){
 
                 given().  //restAssured ten gelen bir method.
