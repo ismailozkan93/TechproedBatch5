@@ -7,7 +7,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static io.restassured.RestAssured.*;
 
-public class GetRequest07 extends TestBase {
+public class GetRequest07 extends TestBase{
 
 
     @Test

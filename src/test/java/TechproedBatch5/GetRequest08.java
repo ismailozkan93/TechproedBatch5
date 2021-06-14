@@ -21,11 +21,9 @@ public class GetRequest08 extends TestBase {
 
        System.out.println(jsonPath.getString("firstname"));
        System.out.println(jsonPath.getString("lastname"));
-       System.out.println(jsonPath.getString("totalprice"));
-       System.out.println(jsonPath.getString("depositpaid"));
-
+       System.out.println(jsonPath.getInt("totalprice"));
+       System.out.println(jsonPath.getBoolean("depositpaid"));
        System.out.println(jsonPath.getString("bookingdates"));
-
        System.out.println(jsonPath.getString("bookingdates.checkin"));
        System.out.println(jsonPath.getString("bookingdates.checkout"));
 
@@ -34,8 +32,8 @@ public class GetRequest08 extends TestBase {
        //2. bolum olmasini bekledigimiz degeri girdigimiz alan
        //3 bolum gercek degerin oldu yer.
        assertEquals("firstname istenilen gibi degil","Ericson",jsonPath.getString("lastname"));
-       assertEquals("totalprice istenilen gibi degil","false",jsonPath.getString("totalprice"));
-       assertEquals("depositpaid istenilen gibi degil","false",jsonPath.getString("depositpaid"));
+       assertEquals("totalprice istenilen gibi degil",548,jsonPath.getInt("totalprice"));
+       assertEquals("depositpaid istenilen gibi degil",true,jsonPath.getBoolean("depositpaid"));
        assertEquals("bookingdates.checkin istenilen gibi degil","2018-03-15",jsonPath.getString("bookingdates.checkin"));
        assertEquals("bookingdates.checkout istenilen gibi degil","2020-09-27",jsonPath.getString("bookingdates.checkout"));
 

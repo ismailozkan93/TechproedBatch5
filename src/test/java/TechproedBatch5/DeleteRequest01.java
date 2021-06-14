@@ -7,7 +7,7 @@ import org.testng.asserts.SoftAssert;
 import static io.restassured.RestAssured.given;
 import static org.testng.Assert.assertTrue;
 
-public class DeleteRequest01 extends TestBase{
+public class DeleteRequest01 extends TestBase {
 
     //delete icin endpoint gerekli
     @Test

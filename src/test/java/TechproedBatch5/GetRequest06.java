@@ -2,12 +2,12 @@ package TechproedBatch5;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.hamcrest.Matchers;
-import org.junit.Test;
+import org.hamcrest.Matchers;//import static org.hamcrest.Matchers.* asagida matchers.equal
+import org.junit.Test;       //yerine sadece equal yazilabilir.
 
 import static io.restassured.RestAssured.given;
 
-public class GetRequest06 extends TestBase{
+public class GetRequest06 extends TestBase {
 
     @Test
     public void get01(){
